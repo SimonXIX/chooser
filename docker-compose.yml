@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  chooser_app:
+    build:
+      context: .
+      dockerfile: Dockerfile 
+    container_name: chooser_app
+    ports:
+      - '8080:80'
+
